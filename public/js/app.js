@@ -7,7 +7,7 @@ weatherForm.addEventListener('submit', (e) => {
   e.preventDefault()
 
   const address = search.value
-  const url = 'http://ibmpdp:3999/weather?address=' + encodeURIComponent(address)
+  const url = '/weather?address=' + encodeURIComponent(address)
 
   messageOne.textContent = 'Loading ...'
   messageTwo.textContent = ''
